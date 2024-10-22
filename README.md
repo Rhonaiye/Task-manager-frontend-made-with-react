@@ -43,7 +43,7 @@ This repository contains the **React.js** frontend for the Task Manager applicat
 3. Set up environment variables by creating a `.env` file:
 
     ```bash
-    VITE_API_URL=http://localhost:8000/api
+    VITE_API_URL=http://localhost:4000/api
     ```
 
 4. Start the development server:
@@ -52,7 +52,7 @@ This repository contains the **React.js** frontend for the Task Manager applicat
     npm run dev
     ```
 
-5. Open the app in the browser at [http://localhost:3000](http://localhost:3000).
+5. Open the app in the browser at [http://localhost:5173](http://localhost:5173).
 
 ## Project Structure
 
