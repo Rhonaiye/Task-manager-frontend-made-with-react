@@ -13,7 +13,7 @@ const Signup = () => {
 
   const handleSignup = async (e) => {
     e.preventDefault();
-    const apiUrl = 'http://127.0.0.1:4000/sign-up/';
+    const apiUrl = 'https://task-managers-fastapi.onrender.com/sign-up/';
 
     // Password validation
     if (password !== confirmPassword) {

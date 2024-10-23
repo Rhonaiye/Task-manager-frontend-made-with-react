@@ -27,7 +27,7 @@ const Home = () => {
       }
 
       try {
-        const response = await fetch('http://127.0.0.1:4000/user/me', {
+        const response = await fetch('https://task-managers-fastapi.onrender.com/user/me', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -54,7 +54,7 @@ const Home = () => {
     const fetchTasks = async () => {
       if (!Logged) return; // Prevent fetching if not logged in
 
-      const apiUrl = 'http://127.0.0.1:4000/get-incomplete-todo/';
+      const apiUrl = 'https://task-managers-fastapi.onrender.com/get-incomplete-todo/';
       const token = localStorage.getItem('token');
 
       try {
@@ -82,7 +82,7 @@ const Home = () => {
     const fetchCompletedTasks = async () => {
       if (!Logged) return; // Prevent fetching if not logged in
 
-      const apiUrl = 'http://127.0.0.1:4000/get-completed-todo/';
+      const apiUrl = 'https://task-managers-fastapi.onrender.com/get-completed-todo/';
       const token = localStorage.getItem('token');
 
       try {
@@ -107,7 +107,7 @@ const Home = () => {
   }, [Logged]);
 
   const deleteTask = async (id) => {
-    const apiUrl = `http://127.0.0.1:4000/delete-todo/${id}`;
+    const apiUrl = `https://task-managers-fastapi.onrender.com/delete-todo/${id}`;
 
     try {
       const response = await fetch(apiUrl, {
@@ -129,7 +129,7 @@ const Home = () => {
       return; // Prevent further execution if validation fails
     }
 
-    const apiUrl = `http://127.0.0.1:4000/create-todo`;
+    const apiUrl = `https://task-managers-fastapi.onrender.com/create-todo`;
     const token = localStorage.getItem('token');
 
     try {
@@ -154,7 +154,7 @@ const Home = () => {
   };
 
   const completeTasks = async (id) => {
-    const apiUrl = `http://127.0.0.1:4000/complete-task/${id}`;
+    const apiUrl = `https://task-managers-fastapi.onrender.com/complete-task/${id}`;
     const token = localStorage.getItem('token');
 
     try {

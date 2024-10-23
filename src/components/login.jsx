@@ -18,7 +18,7 @@ const Login = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const apiUrl = 'http://127.0.0.1:4000/login/'; // Update with your FastAPI login endpoint
+    const apiUrl = 'https://task-managers-fastapi.onrender.com/login/'; // Update with your FastAPI login endpoint
 
     try {
       const response = await fetch(apiUrl, {
